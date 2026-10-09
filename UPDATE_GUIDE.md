@@ -6,7 +6,9 @@ Overview now provides six business questions, findings, next actions and evidenc
 
 ## Optional AI report
 
-The automatic decision summary works without a key. To enable genuine AI narrative generation, add the following through Streamlit app settings → Secrets, never in GitHub:
+The automatic decision summary works without a key. To enable genuine AI narrative generation, open Overview → AI decision report → AI connection, enter an OpenAI API key and a model name, then press Generate AI decision report. The password field retains the key only in the active app session; Clear entered key and report removes it. It is not written to files or reports. A key is processed on the hosting server for the request.
+
+Alternatively, the app owner can configure a key through Streamlit app settings → Secrets, never in GitHub:
 
 ```toml
 OPENAI_API_KEY = "your-private-api-key"
